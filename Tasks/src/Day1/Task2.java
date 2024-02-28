@@ -9,13 +9,13 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        Set<Character> set = uniqChar(str);
+        Set<Character> set = uniqueChar(str);
         for(char ch : set){
             System.out.print(ch);
         }
     }
 
-    private static Set<Character> uniqChar(String str) {
+    private static Set<Character> uniqueChar(String str) {
         Set<Character> set = new HashSet<>();
         Map<Character,Integer> map = new HashMap<>();
         for(char ch : str.toCharArray()){
